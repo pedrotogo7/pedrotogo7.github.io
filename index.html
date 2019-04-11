@@ -2,16 +2,65 @@
     <html lang="pt_BR">
         <head>
             <meta charset="UTF-8">
-            <title>Programação Script</title>
+
         </head>
 
 <body>
-    <h1>Programação Script - Labs Web</h1>
-    <h2>Projetos</h2>
-    <ul>
-    <li> <a href="Lab1.html"> Lab 1</a> </li>
-    </ul>
-    >  
-    <p> </p>
+        <style>
+                body {background-color: rgb(194, 204, 206);}
+                h1   {color: rgb(43, 43, 160);}
+                p    {color: rgb(0, 0, 0);}
+                </style>
+    <h1>Questionário de preferências musicais</h1>
+    <form>
+ <p>Nome: <input id="nome" name="nome" type="text"></p>
+     <button type="button" onclick="alert('Esse e mesmo seu nome?')">Pergunta</button>
+ <p>Data de nascimento:
+     <input id="nascimento" name="nascimento" type="date"></p>
+     <p>E-mail:
+     <input id="email" name="Email" type="email"></p>
+     <p>Imagem:
+         <input id="imagem" name="imagem" type="file"
+         accept="image/png, image/jpg"></p>
+ <p>Genero:
+ <select id="genero" name="genero">
+     <option value="masculino">Masculino</option>
+    <option value="feminino">Feminino</option>
+    <option value="alien">Alien</option>
+<option value="outros">Outros</option>
+</select></p>
+<p>
+Tipo sanguineo:
+<br><br>
+<label><input type="radio" name="type of blood" value="O">O</label>
+<label><input type="radio" name="type of blood" value="A">A</label>
+<label><input type="radio" name="type of blood" value="B">B</label>
+<label><input type="radio" name="type of blood" value="AB">AB</label>
+<br>
+<label><input type="radio" name="rhsangue">+</label>
+<label><input type="radio" name="rhsangue">-</label>
+</p>
+<p>
+Caracteristicas:
+<label><input type="checkbox" name="checkbox" value="alto">Alto</label>
+<label><input type="checkbox" name="checkbox" value="baixo">Baixo</label>
+<label><input type="checkbox" name="checkbox" value="magro">Magro</label>
+<label><input type="checkbox" name="checkbox" value="gordo">Gordo</label>
+</p>
+
+<p> Biografia: <br><br>
+<textarea name="biografria" rows="5" cols="20">
+    </textarea>
+    </p>
+    <p>
+        <button type="button" onclick="alert('sucesso!')">Tentativa</button>
+        <button type="button" onclick="alert('falha!')">Tentativa</button>
+</p>
+<p> 
+<h1>Menu de projetos</h1>
+</p>
+<li> <a href="Menu.html">MENU </a>
+</li>
+</form>
 </body> 
     </html>
