@@ -25,9 +25,40 @@ function Q3() {
     var aux = document.getElementById('profissoes');
     var profissao = aux.options[aux.selectedIndex].text;
     // Segue aqui seu código
-    if (profissao.endsWith('a')
-        {console.log 'feminino'}
-
-
-
+    if
+    (profissao == 'Presidente'){
+        console.log('Ambos');
 }
+else if
+(profissao.endsWith('a')||profissao.endsWith('z')){
+    console.log('Feminino');
+}
+else
+    console.log('Masculino');
+}
+
+function Q4() {
+    console.log('Q4');
+    var a_str = document.getElementById('a').value;
+    var b_str = document.getElementById('b').value;
+    var c_str = document.getElementById('c').value;
+    // Segue aqui seu código
+    if(!a_str){
+        let b = Number.parseFloat(b_str);
+        let c = Number.parseFloat(c_str);
+        console.log('hipotenusa A = ' + Math.sqrt((b * b) + (c * c)));
+    }
+    if(!b_str){
+        let a = Number.parseFloat(a_str);
+        let c = Number.parseFloat(c_str);
+        console.log('cateto B = ' + Math.sqrt((a * a) - (c * c)));
+    }
+    if(!c_str){
+        let a = Number.parseFloat(a_str);
+        let b = Number.parseFloat(b_str);
+        console.log('cateto C = ' + Math.sqrt((a * a) - (b * b)));
+    }
+
+
+    }
+
