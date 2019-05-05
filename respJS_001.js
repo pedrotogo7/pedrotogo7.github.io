@@ -39,26 +39,29 @@ else
 
 function Q4() {
     console.log('Q4');
-    var a_str = document.getElementById('a').value;
-    var b_str = document.getElementById('b').value;
-    var c_str = document.getElementById('c').value;
+    var a_str = document.getElementById('a2').value;
+    var b_str = document.getElementById('b2').value;
+    var c_str = document.getElementById('c2').value;
     // Segue aqui seu código
     if(!a_str){
-        let b = Number.parseFloat(b_str);
-        let c = Number.parseFloat(c_str);
-        console.log('hipotenusa A = ' + Math.sqrt((b * b) + (c * c)));
+        let b2 = Number.parseFloat(b_str);
+        let c2 = Number.parseFloat(c_str);
+        console.log('Hipotenusa = ' + Math.sqrt((b2 * b2) + (c2 * c2)));
     }
-    if(!b_str){
-        let a = Number.parseFloat(a_str);
-        let c = Number.parseFloat(c_str);
-        console.log('cateto B = ' + Math.sqrt((a * a) - (c * c)));
+    else if(!b_str)
+    {
+        let a2 = Number.parseFloat(a_str);
+        let c2 = Number.parseFloat(c_str);
+        console.log('Cateto = ' + Math.sqrt((a2 * a2) - (c2 * c2)));
     }
-    if(!c_str){
-        let a = Number.parseFloat(a_str);
-        let b = Number.parseFloat(b_str);
-        console.log('cateto C = ' + Math.sqrt((a * a) - (b * b)));
+    else if(!c_str)
+    {
+        let a2 = Number.parseFloat(a_str);
+        let b2 = Number.parseFloat(b_str);
+        console.log('Cateto2 = ' + Math.sqrt((a2 * a2) - (b2 * b2)));
     }
 
 
-    }
+
+}
 

@@ -1,85 +1,69 @@
 <!DOCTYPE <html>
     <html lang="pt_BR">
         <head>
-          <style>
-          .icone{float:initial;
-              height:170pt;
-              margin:initial;
-              width:300pt;
-          }
-          .title{
-              background-color:darkorange;            font-variant:small-caps;
-               font-family: sans-serif;
-               font-style: normal;
-               color:brown;
-               padding:100px;
-               float:left -10;
-          }
-               .cabecalho{
-                   background-color:darkolivegreen;
-                   padding:5px;
-                   height: 180pt;
-               } 
-               .corpo{
-                   font-size: larger;
-                   font-style: italic;
-                   float:left;
-                   padding:3px;
-               }
-               .otherimage{
-                float:right -40;
-                height:170pt;
-                width:300.8pt;
+            <meta charset="UTF-8">
 
-               }
-                
-                .trimage{
-                    float:right -5;
-                    height:170pt;
-                    width:320.9pt;
-                }
-               
-               .título{
-                   font-size:xx-large;
-                   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                   font-style:italic;
-               }
-          </style>
-    <body>
-        <div class="todo">
-            <div class="cabecalho">
-                <img class="icone" src="https://farm8.staticflickr.com/7360/27753422426_23646beb65_b.jpg">
-                <img class="otherimage" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Haghpat_village_nature.jpg">
-                <img class="trimage" src="http://conexaoplaneta.com.br/wp-content/uploads/2018/09/brasileiro-pesquisa-viver-perto-do-verde-wwfbrasil.png">
-                 <br>
-                 
-                <h1 class="título"> Save the nature</h1>
-                <div style="float: left; width: 100%;"class="menu">
-                    <div class="corpo">
-                        <p>  It is a well-known fact; 
-                           we don’t value a thing until we lost it. 
-                           Here from thing I mean the trees and plants. 
-                           Human beings and animals, all are wholly reliant on trees. 
-                           Largest portion of our food comes from plants and trees. 
-                           Corn, fruits, vegetables, spices, nuts and many other edibles come from trees. 
-                           They play a very important role in our lives.
-                           Plants and trees are considered to be the rescuers of the nature.
-                            If we wouldn’t save them, our next generation will have to pay for it. 
-                            So, just take care of them, they’ll take care of you. 
-                            A study shows that having trees in your neighborhood will keep you away from many mental and physical diseases. 
-                            They’ll have a very stimulating impact.
-                        </p>
-                           
-                           <a href="Google.com.br">Google Nature is Life</a>
-                        
-                        <div class="rodape">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </head>
 
-        </div>
+<body>
+        <style>
+                body {background-color:rgb(118, 132, 143); background-image: url("https://photojournal.jpl.nasa.gov/jpeg/PIA22085.jpg"); background-size: 1080pt;}
+                h1   {color:rgb(255, 255, 255);}
+                p    {color: rgb(255, 255, 255);font-size:larger;}
+                img {float: right;height: 200pt;}
+                a:link{color:rgb(8, 241, 8);
+                background:rgb(47, 230, 62);}
+
+                </style>
+                <img src="https://www.magneticmag.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTQzNDkwNDU1MDE3ODkwOTU5/spotify-1360002_1280jpg.jpg">
+    <h1>Questionário de preferências musicais</h1>
+    <form>
+ <p>Nome: <input id="nome" name="nome" type="text"></p>
+     <button type="button" onclick="alert('Esse e mesmo seu nome?')">Pergunta</button>
+ <p>Data de nascimento:
+     <input id="nascimento" name="nascimento" type="date"></p>
+     <p>E-mail:
+     <input id="email" name="Email" type="email"></p>
+     <p>Imagem:
+         <input id="imagem" name="imagem" type="file"
+         accept="image/png, image/jpg"></p>
+ <p>Genero:
+ <select id="genero" name="genero">
+     <option value="masculino">Masculino</option>
+    <option value="feminino">Feminino</option>
+    <option value="alien">Alien</option>
+<option value="outros">Outros</option>
+</select></p>
+<p>
+Tipo sanguineo:
+<br><br>
+<label><input type="radio" name="type of blood" value="O">O</label>
+<label><input type="radio" name="type of blood" value="A">A</label>
+<label><input type="radio" name="type of blood" value="B">B</label>
+<label><input type="radio" name="type of blood" value="AB">AB</label>
+<br>
+<label><input type="radio" name="rhsangue">+</label>
+<label><input type="radio" name="rhsangue">-</label>
+</p>
+<p>
+Estilos:
+<label><input type="checkbox" name="checkbox" value="Rock">Rock</label>
+<label><input type="checkbox" name="checkbox" value="Samba">Samba</label>
+<label><input type="checkbox" name="checkbox" value="Sertanejo">Sertanejo</label>
+<label><input type="checkbox" name="checkbox" value="Pop">Pop</label>
+</p>
+
+<p> Biografia: <br><br>
+<textarea name="biografria" rows="5" cols="20">
+    </textarea>
+    </p>
+    <p>
+        <button type="button" onclick="alert('sucesso!')">Tentativa</button>
+        <button type="button" onclick="alert('falha!')">Tentativa</button>
+</p>
+<p>Menu de Projetos:<a href="index.html">Todos os projetos</a></p>
+
+</li>
+</form>
 </body> 
     </html>
