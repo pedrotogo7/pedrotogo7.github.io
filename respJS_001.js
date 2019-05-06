@@ -65,3 +65,31 @@ function Q4() {
 
 }
 
+function Q5() {
+    console.log('Q5');
+    var altura = Number.parseFloat(document.getElementById('altura').value);
+    var peso = Number.parseFloat(document.getElementById('peso').value);
+    var aux = document.getElementById('generos');
+    var genero = aux.options[aux.selectedIndex].text;
+    // Segue aqui seu código
+    console.log('Altura = ' + a4);
+    console.log('Peso = ' + b5);
+    console.log('IMC = ' + (peso / (altura * altura)));
+    if
+    (genero == 'Feminino'){
+    
+    if('IMC = ' < 18.5){
+        console.log('Magra');
+    }
+    else if(18.5 < 'IMC = ' < 24.9){
+        console.log('Sarada');
+    }
+    else if(25 < 'IMC = ' < 29.9){
+        console.log('Rechochuda');
+    }
+    else if('IMC = ' > 30){
+        console.log('Obesa');
+    }
+    
+}
+}
