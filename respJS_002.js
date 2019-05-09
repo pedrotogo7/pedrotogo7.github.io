@@ -33,11 +33,13 @@ function Q2() {
         if
         (profissao == 'Presidente'){
             console.log('Ambos');
-            document.getElementById('RQ1.9').innerHTML = "Gênero: " ;
+            document.getElementById('RQ1.9').innerHTML = "Gênero: " + 'Ambos';
     }
     else if
     (profissao.endsWith('a')||profissao.endsWith('z')){
         console.log('Feminino');
+        document.getElementById('RQ1.91').innerHTML = "Gênero: " + 'Feminino';
     }
     else
-        console.log('Masculino'); }
+        console.log('Masculino'); 
+        document.getElementById('RQ1.92').innerHTML = "Gênero: " + 'Masculino';}
