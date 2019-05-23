@@ -102,7 +102,7 @@ function Q4(){
     var aux = document.getElementById('numerosQ4').value;
     var numerosQ4 = aux.split(';');
     var ordenados;
-for (let i = 0; i < numerosQ4,length; i++) {
+for (let i = 0; i < numerosQ4.length; i++) {
     numerosQ4[i] = Number.parseFloat(numerosQ4[i]);
 }
 console.log('++++' + numerosQ4);
@@ -110,3 +110,18 @@ ordenados = Quciksort(numerosQ4);
 console.log(ordenados);
 document.getElementById('RQ4').innerHTML = ordenados;
 }
+
+var matrizA = [];
+var matrizB = [];
+function appendMA() {
+    var aux = (document.getElementById('linhaA').value).split(';');
+    document.getElementById('linhaA').value = "";
+    for (let i = 0; i < aux.length; i++) {
+        aux[i] = Number.parseFloat(aux[i]);
+}
+matrizA.push(aux);
+console.log(matrizA);
+m = "<table>";
+for(let i = 0; i < matrizA.length; i++);
+}
+
