@@ -45,14 +45,68 @@ function isPrimo(numero) {
     return true;
 }
 
-var listaStrings = [];
-function Q3() {
+function acrescentaSTR(){
+var aux = document.getElementById('novaString').value;
+listaStrings.push(aux);
+document.getElementById('novaString').value = "";
+document.getElementById('auxQ3').innerHTML = listaStrings;
+
+}
+function Q3(){
     console.log('Q3');
-    var novaString = document.getElementById('novaString').value;
-    var caps = novaString.toUpperCase();
-    listaStrings.push(caps);
+    for(let i = 0; i < listaStrings.length; i++) {
+        listaStrings[i] = listaStrings[i].toUpperCase();
+    }
     console.log(listaStrings);
     document.getElementById('RQ3').innerHTML = listaStrings;
+}
 
-    
+function QuickSort_(X, IniVet, FimVet) { // X é array}
+console.log('IniVet, FimVet')
+var i = IniVet;
+var j = FimVet;
+var pivo = X[Math.floor((IniVet+FimVet)/2)];
+var aux;
+
+   while(i <= j){
+       while (X[i] < pivo) {
+           i++;
+       }  
+    while (X[j] > pivo) {
+        j--;
+    }
+          if (i <= j) {
+             aux  = X[i];
+              X[i] = X[j];
+              X[j] = aux;
+              i++;
+              j--;
+          }
+        }    
+
+   
+   if (IniVet < j) {
+      QuickSort(X, IniVet, j);
+   }
+   if (i < FimVet) {
+      QuickSort(X, i, FimVet);
+   }
+}
+function Quicksort(X) {
+    var Y = Array.from(X);
+    Quicksort_(Y, 0, Y.length- 1);
+    return Y;
+}
+function Q4(){
+    console.log('Q4');
+    var aux = document.getElementById('numerosQ4').value;
+    var numerosQ4 = aux.split(';');
+    var ordenados;
+for (let i = 0; i < numerosQ4,length; i++) {
+    numerosQ4[i] = Number.parseFloat(numerosQ4[i]);
+}
+console.log('++++' + numerosQ4);
+ordenados = Quciksort(numerosQ4);
+console.log(ordenados);
+document.getElementById('RQ4').innerHTML = ordenados;
 }
